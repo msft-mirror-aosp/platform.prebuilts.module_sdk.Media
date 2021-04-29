@@ -1,0 +1,37 @@
+
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+java_sdk_library_import {
+    name: "framework-media",
+    owner: "google",
+    prefer: false,
+    shared_library: false,
+    apex_available: [
+        "com.android.media",
+        "test_com.android.media",
+    ],
+    public: {
+        jars: ["current/public/framework-media.jar"],
+        stub_srcs: ["current/public/framework-media.srcjar"],
+        current_api: "current/public/framework-media.txt",
+        removed_api: "current/public/framework-media-removed.txt",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["current/system/framework-media.jar"],
+        stub_srcs: ["current/system/framework-media.srcjar"],
+        current_api: "current/system/framework-media.txt",
+        removed_api: "current/system/framework-media-removed.txt",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["current/module_lib/framework-media.jar"],
+        stub_srcs: ["current/module_lib/framework-media.srcjar"],
+        current_api: "current/module_lib/framework-media.txt",
+        removed_api: "current/module_lib/framework-media-removed.txt",
+        sdk_version: "module_current",
+    },
+}
