@@ -13,6 +13,17 @@ prebuilt_bootclasspath_fragment {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license@1"],
     contents: ["media-module-sdk_updatable-media@1"],
+    api: {
+        stub_libs: ["media-module-sdk_framework-media@1"],
+    },
+    hidden_api: {
+        max_target_o_low_priority: ["hiddenapi/hiddenapi-max-target-o-low-priority.txt"],
+        stub_flags: "hiddenapi/stub-flags.csv",
+        annotation_flags: "hiddenapi/annotation-flags.csv",
+        metadata: "hiddenapi/metadata.csv",
+        index: "hiddenapi/index.csv",
+        all_flags: "hiddenapi/all-flags.csv",
+    },
 }
 
 java_import {
