@@ -17,7 +17,7 @@ prebuilt_bootclasspath_fragment {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
-    prefer: true,
+    prefer: false,
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
@@ -43,7 +43,7 @@ java_import {
 
 java_import {
     name: "updatable-media",
-    prefer: true,
+    prefer: false,
     visibility: [
         "//frameworks/av/apex:__subpackages__",
         "//frameworks/base",
@@ -90,7 +90,7 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "framework-media",
-    prefer: true,
+    prefer: false,
     visibility: ["//visibility:public"],
     apex_available: ["//apex_available:platform"],
     licenses: ["media-module-sdk_frameworks_base_license"],
@@ -143,7 +143,7 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "service-media-s",
-    prefer: true,
+    prefer: false,
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license"],
