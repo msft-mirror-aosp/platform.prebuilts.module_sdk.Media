@@ -6,6 +6,15 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+soong_config_module_type_import {
+    from: "packages/modules/common/Android.bp",
+    module_types: [
+        "module_java_import",
+        "module_java_sdk_library_import",
+        "module_prebuilt_bootclasspath_fragment",
+    ],
+}
+
 prebuilt_bootclasspath_fragment {
     name: "media-module-sdk_com.android.media-bootclasspath-fragment@current",
     sdk_member_name: "com.android.media-bootclasspath-fragment",
@@ -26,9 +35,14 @@ prebuilt_bootclasspath_fragment {
     },
 }
 
-prebuilt_bootclasspath_fragment {
+module_prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
-    prefer: false,
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
@@ -63,9 +77,14 @@ java_import {
     jars: ["java/updatable-media.jar"],
 }
 
-java_import {
+module_java_import {
     name: "updatable-media",
-    prefer: false,
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: [
         "//frameworks/av/apex:__subpackages__",
         "//frameworks/base",
@@ -110,9 +129,14 @@ java_sdk_library_import {
     },
 }
 
-java_sdk_library_import {
+module_java_sdk_library_import {
     name: "framework-media",
-    prefer: false,
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["//apex_available:platform"],
     licenses: ["media-module-sdk_frameworks_base_license"],
@@ -163,9 +187,14 @@ java_sdk_library_import {
     },
 }
 
-java_sdk_library_import {
+module_java_sdk_library_import {
     name: "service-media-s",
-    prefer: false,
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license"],
