@@ -13,6 +13,17 @@ prebuilt_bootclasspath_fragment {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license@current"],
     contents: ["media-module-sdk_updatable-media@current"],
+    api: {
+        stub_libs: ["media-module-sdk_framework-media@current"],
+    },
+    hidden_api: {
+        max_target_o_low_priority: ["hiddenapi/hiddenapi-max-target-o-low-priority.txt"],
+        stub_flags: "hiddenapi/stub-flags.csv",
+        annotation_flags: "hiddenapi/annotation-flags.csv",
+        metadata: "hiddenapi/metadata.csv",
+        index: "hiddenapi/index.csv",
+        all_flags: "hiddenapi/all-flags.csv",
+    },
 }
 
 prebuilt_bootclasspath_fragment {
@@ -22,6 +33,17 @@ prebuilt_bootclasspath_fragment {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
     contents: ["updatable-media"],
+    api: {
+        stub_libs: ["framework-media"],
+    },
+    hidden_api: {
+        max_target_o_low_priority: ["hiddenapi/hiddenapi-max-target-o-low-priority.txt"],
+        stub_flags: "hiddenapi/stub-flags.csv",
+        annotation_flags: "hiddenapi/annotation-flags.csv",
+        metadata: "hiddenapi/metadata.csv",
+        index: "hiddenapi/index.csv",
+        all_flags: "hiddenapi/all-flags.csv",
+    },
 }
 
 java_import {
