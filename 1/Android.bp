@@ -41,6 +41,7 @@ java_import {
     ],
     licenses: ["media-module-sdk_frameworks_base_license@1"],
     jars: ["java/updatable-media.jar"],
+    permitted_packages: ["android.media"],
 }
 
 java_sdk_library_import {
@@ -80,6 +81,7 @@ java_sdk_library_import {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license@1"],
     shared_library: false,
+    permitted_packages: ["com.android.server.media"],
     public: {
         jars: ["sdk_library/public/service-media-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
