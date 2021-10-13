@@ -94,6 +94,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-media.srcjar"],
         current_api: "sdk_library/public/framework-media.txt",
         removed_api: "sdk_library/public/framework-media-removed.txt",
+        annotations: "sdk_library/public/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -101,6 +102,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-media.srcjar"],
         current_api: "sdk_library/system/framework-media.txt",
         removed_api: "sdk_library/system/framework-media-removed.txt",
+        annotations: "sdk_library/system/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -108,6 +110,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-media.srcjar"],
         current_api: "sdk_library/module-lib/framework-media.txt",
         removed_api: "sdk_library/module-lib/framework-media-removed.txt",
+        annotations: "sdk_library/module-lib/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
 }
@@ -124,6 +127,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-media.srcjar"],
         current_api: "sdk_library/public/framework-media.txt",
         removed_api: "sdk_library/public/framework-media-removed.txt",
+        annotations: "sdk_library/public/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -131,6 +135,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-media.srcjar"],
         current_api: "sdk_library/system/framework-media.txt",
         removed_api: "sdk_library/system/framework-media-removed.txt",
+        annotations: "sdk_library/system/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -138,6 +143,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-media.srcjar"],
         current_api: "sdk_library/module-lib/framework-media.txt",
         removed_api: "sdk_library/module-lib/framework-media-removed.txt",
+        annotations: "sdk_library/module-lib/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
 }
@@ -155,6 +161,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
         current_api: "sdk_library/public/service-media-s.txt",
         removed_api: "sdk_library/public/service-media-s-removed.txt",
+        annotations: "sdk_library/public/service-media-s_annotations.zip",
         sdk_version: "module_current",
     },
     system_server: {
@@ -162,6 +169,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system-server/service-media-s.srcjar"],
         current_api: "sdk_library/system-server/service-media-s.txt",
         removed_api: "sdk_library/system-server/service-media-s-removed.txt",
+        annotations: "sdk_library/system-server/service-media-s_annotations.zip",
         sdk_version: "system_server_current",
     },
 }
@@ -179,6 +187,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
         current_api: "sdk_library/public/service-media-s.txt",
         removed_api: "sdk_library/public/service-media-s-removed.txt",
+        annotations: "sdk_library/public/service-media-s_annotations.zip",
         sdk_version: "module_current",
     },
     system_server: {
@@ -186,6 +195,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system-server/service-media-s.srcjar"],
         current_api: "sdk_library/system-server/service-media-s.txt",
         removed_api: "sdk_library/system-server/service-media-s-removed.txt",
+        annotations: "sdk_library/system-server/service-media-s_annotations.zip",
         sdk_version: "system_server_current",
     },
 }
