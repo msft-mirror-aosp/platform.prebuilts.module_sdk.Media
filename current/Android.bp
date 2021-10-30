@@ -61,6 +61,7 @@ java_import {
     ],
     licenses: ["media-module-sdk_frameworks_base_license@current"],
     jars: ["java/updatable-media.jar"],
+    permitted_packages: ["android.media"],
 }
 
 java_import {
@@ -78,6 +79,7 @@ java_import {
     ],
     licenses: ["media-module-sdk_frameworks_base_license"],
     jars: ["java/updatable-media.jar"],
+    permitted_packages: ["android.media"],
 }
 
 java_sdk_library_import {
@@ -147,6 +149,7 @@ java_sdk_library_import {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license@current"],
     shared_library: false,
+    permitted_packages: ["com.android.server.media"],
     public: {
         jars: ["sdk_library/public/service-media-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
@@ -170,6 +173,7 @@ java_sdk_library_import {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license"],
     shared_library: false,
+    permitted_packages: ["com.android.server.media"],
     public: {
         jars: ["sdk_library/public/service-media-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
