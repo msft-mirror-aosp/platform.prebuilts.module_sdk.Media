@@ -1291,7 +1291,6 @@ Landroid/media/MediaTranscodingManager;->lambda$registerClient$5()V
 Landroid/media/MediaTranscodingManager;->mContentResolver:Landroid/content/ContentResolver;
 Landroid/media/MediaTranscodingManager;->mContext:Landroid/content/Context;
 Landroid/media/MediaTranscodingManager;->mExecutor:Ljava/util/concurrent/ExecutorService;
-Landroid/media/MediaTranscodingManager;->mIsLowRamDevice:Z
 Landroid/media/MediaTranscodingManager;->mLock:Ljava/lang/Object;
 Landroid/media/MediaTranscodingManager;->mPackageName:Ljava/lang/String;
 Landroid/media/MediaTranscodingManager;->mPendingTranscodingSessions:Ljava/util/HashMap;
