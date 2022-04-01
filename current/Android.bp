@@ -1,6 +1,11 @@
 // This is auto-generated. DO NOT EDIT.
 
-// Soong config variable stanza added by vendor/google/build/mainline_modules_sdks.py.
+package {
+    // A default list here prevents the license LSC from adding its own list which would
+    // be unnecessary as every module in the sdk already has its own licenses property.
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
 soong_config_module_type_import {
     from: "packages/modules/common/Android.bp",
     module_types: [
@@ -8,12 +13,6 @@ soong_config_module_type_import {
         "module_java_sdk_library_import",
         "module_prebuilt_bootclasspath_fragment",
     ],
-}
-
-package {
-    // A default list here prevents the license LSC from adding its own list which would
-    // be unnecessary as every module in the sdk already has its own licenses property.
-    default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
 prebuilt_bootclasspath_fragment {
