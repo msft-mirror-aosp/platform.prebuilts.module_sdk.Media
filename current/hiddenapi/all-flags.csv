@@ -1291,7 +1291,6 @@ Landroid/media/MediaTranscodingManager;->lambda$registerClient$5()V,blocked
 Landroid/media/MediaTranscodingManager;->mContentResolver:Landroid/content/ContentResolver;,blocked
 Landroid/media/MediaTranscodingManager;->mContext:Landroid/content/Context;,blocked
 Landroid/media/MediaTranscodingManager;->mExecutor:Ljava/util/concurrent/ExecutorService;,blocked
-Landroid/media/MediaTranscodingManager;->mIsLowRamDevice:Z,blocked
 Landroid/media/MediaTranscodingManager;->mLock:Ljava/lang/Object;,blocked
 Landroid/media/MediaTranscodingManager;->mPackageName:Ljava/lang/String;,blocked
 Landroid/media/MediaTranscodingManager;->mPendingTranscodingSessions:Ljava/util/HashMap;,blocked
