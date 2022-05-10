@@ -6,6 +6,15 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+soong_config_module_type_import {
+    from: "packages/modules/common/Android.bp",
+    module_types: [
+        "module_java_import",
+        "module_java_sdk_library_import",
+        "module_prebuilt_bootclasspath_fragment",
+    ],
+}
+
 prebuilt_bootclasspath_fragment {
     name: "media-module-sdk_com.android.media-bootclasspath-fragment@current",
     sdk_member_name: "com.android.media-bootclasspath-fragment",
@@ -26,9 +35,14 @@ prebuilt_bootclasspath_fragment {
     },
 }
 
-prebuilt_bootclasspath_fragment {
+module_prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
     prefer: false,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
@@ -61,12 +75,16 @@ java_import {
     ],
     licenses: ["media-module-sdk_frameworks_base_license@current"],
     jars: ["java/updatable-media.jar"],
-    permitted_packages: ["android.media"],
 }
 
-java_import {
+module_java_import {
     name: "updatable-media",
     prefer: false,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: [
         "//frameworks/av/apex:__subpackages__",
         "//frameworks/base",
@@ -79,7 +97,6 @@ java_import {
     ],
     licenses: ["media-module-sdk_frameworks_base_license"],
     jars: ["java/updatable-media.jar"],
-    permitted_packages: ["android.media"],
 }
 
 java_sdk_library_import {
@@ -94,6 +111,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-media.srcjar"],
         current_api: "sdk_library/public/framework-media.txt",
         removed_api: "sdk_library/public/framework-media-removed.txt",
+        annotations: "sdk_library/public/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -101,6 +119,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-media.srcjar"],
         current_api: "sdk_library/system/framework-media.txt",
         removed_api: "sdk_library/system/framework-media-removed.txt",
+        annotations: "sdk_library/system/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -108,13 +127,19 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-media.srcjar"],
         current_api: "sdk_library/module-lib/framework-media.txt",
         removed_api: "sdk_library/module-lib/framework-media-removed.txt",
+        annotations: "sdk_library/module-lib/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
 }
 
-java_sdk_library_import {
+module_java_sdk_library_import {
     name: "framework-media",
     prefer: false,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["//apex_available:platform"],
     licenses: ["media-module-sdk_frameworks_base_license"],
@@ -124,6 +149,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-media.srcjar"],
         current_api: "sdk_library/public/framework-media.txt",
         removed_api: "sdk_library/public/framework-media-removed.txt",
+        annotations: "sdk_library/public/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -131,6 +157,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-media.srcjar"],
         current_api: "sdk_library/system/framework-media.txt",
         removed_api: "sdk_library/system/framework-media-removed.txt",
+        annotations: "sdk_library/system/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -138,6 +165,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-media.srcjar"],
         current_api: "sdk_library/module-lib/framework-media.txt",
         removed_api: "sdk_library/module-lib/framework-media-removed.txt",
+        annotations: "sdk_library/module-lib/framework-media_annotations.zip",
         sdk_version: "module_current",
     },
 }
@@ -149,12 +177,12 @@ java_sdk_library_import {
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license@current"],
     shared_library: false,
-    permitted_packages: ["com.android.server.media"],
     public: {
         jars: ["sdk_library/public/service-media-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
         current_api: "sdk_library/public/service-media-s.txt",
         removed_api: "sdk_library/public/service-media-s-removed.txt",
+        annotations: "sdk_library/public/service-media-s_annotations.zip",
         sdk_version: "module_current",
     },
     system_server: {
@@ -162,23 +190,29 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system-server/service-media-s.srcjar"],
         current_api: "sdk_library/system-server/service-media-s.txt",
         removed_api: "sdk_library/system-server/service-media-s-removed.txt",
+        annotations: "sdk_library/system-server/service-media-s_annotations.zip",
         sdk_version: "system_server_current",
     },
 }
 
-java_sdk_library_import {
+module_java_sdk_library_import {
     name: "service-media-s",
     prefer: false,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_base_license"],
     shared_library: false,
-    permitted_packages: ["com.android.server.media"],
     public: {
         jars: ["sdk_library/public/service-media-s-stubs.jar"],
         stub_srcs: ["sdk_library/public/service-media-s.srcjar"],
         current_api: "sdk_library/public/service-media-s.txt",
         removed_api: "sdk_library/public/service-media-s-removed.txt",
+        annotations: "sdk_library/public/service-media-s_annotations.zip",
         sdk_version: "module_current",
     },
     system_server: {
@@ -186,6 +220,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system-server/service-media-s.srcjar"],
         current_api: "sdk_library/system-server/service-media-s.txt",
         removed_api: "sdk_library/system-server/service-media-s-removed.txt",
+        annotations: "sdk_library/system-server/service-media-s_annotations.zip",
         sdk_version: "system_server_current",
     },
 }
