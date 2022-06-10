@@ -82,10 +82,7 @@ java_import {
     sdk_member_name: "updatable-media",
     visibility: [
         "//frameworks/av/apex:__subpackages__",
-        "//frameworks/base/apex/media/service",
-        "//frameworks/base/api",
         "//packages/modules/Media/apex/framework",
-        "//packages/modules/Media/apex/service",
     ],
     apex_available: [
         "com.android.media",
@@ -107,10 +104,7 @@ module_java_import {
     },
     visibility: [
         "//frameworks/av/apex:__subpackages__",
-        "//frameworks/base/apex/media/service",
-        "//frameworks/base/api",
         "//packages/modules/Media/apex/framework",
-        "//packages/modules/Media/apex/service",
     ],
     apex_available: [
         "com.android.media",
@@ -125,7 +119,10 @@ java_sdk_library_import {
     name: "media-module-sdk_framework-media@current",
     sdk_member_name: "framework-media",
     visibility: ["//visibility:public"],
-    apex_available: ["//apex_available:platform"],
+    apex_available: [
+        "com.android.media",
+        "test_com.android.media",
+    ],
     licenses: ["media-module-sdk_Android-Apache-2.0@current"],
     shared_library: false,
     public: {
@@ -164,7 +161,10 @@ module_java_sdk_library_import {
         },
     },
     visibility: ["//visibility:public"],
-    apex_available: ["//apex_available:platform"],
+    apex_available: [
+        "com.android.media",
+        "test_com.android.media",
+    ],
     licenses: ["media-module-sdk_Android-Apache-2.0"],
     shared_library: false,
     public: {
