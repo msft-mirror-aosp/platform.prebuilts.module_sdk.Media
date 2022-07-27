@@ -1,6 +1,10 @@
 drops {
   android_build_drop {
+<<<<<<< HEAD   (e8602d [automerger skipped] DO NOT MERGE - Merge TP1A.220624.013 am)
     build_id: "T1004067"
+=======
+    build_id: "T1004275"
+>>>>>>> CHANGE (668d4a DO NOT MERGE Drop prebuilt files to android source tree.)
     target: "train_build"
     source_file: "mainline-sdks/for-Tiramisu-build/current/com.google.android.media/sdk/media-module-sdk-current.zip"
   }
