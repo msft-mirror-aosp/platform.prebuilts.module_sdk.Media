@@ -1,5 +1,11 @@
 // This is auto-generated. DO NOT EDIT.
 
+// blueprint rules added by vendor/google/build/mainline_modules_sdks.py
+// to support coexistence.
+blueprint_package_includes {
+    match_all: ["com.android.mainline"]
+}
+
 package {
     // A default list here prevents the license LSC from adding its own list which would
     // be unnecessary as every module in the sdk already has its own licenses property.
@@ -56,6 +62,7 @@ java_import {
     ],
     licenses: ["media-module-sdk_Android-Apache-2.0"],
     jars: ["java_boot_libs/snapshot/jars/are/invalid/updatable-media.jar"],
+    min_sdk_version: "29",
     permitted_packages: ["android.media"],
 }
 
@@ -73,6 +80,7 @@ java_sdk_library_import {
     ],
     licenses: ["media-module-sdk_Android-Apache-2.0"],
     shared_library: false,
+    permitted_packages: ["android.media"],
     public: {
         jars: ["sdk_library/public/framework-media-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-media.srcjar"],
