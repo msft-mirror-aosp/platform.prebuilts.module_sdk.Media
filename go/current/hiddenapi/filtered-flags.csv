@@ -65,8 +65,8 @@ Landroid/media/MediaCommunicationManager$SessionCallbackRecord;->hashCode()I,cor
 Landroid/media/MediaCommunicationManager;->getSession2Tokens()Ljava/util/List;,public-api,sdk,system-api,test-api
 Landroid/media/MediaCommunicationManager;->getVersion()I,public-api,sdk,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/MediaController2$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/MediaController2$$ExternalSyntheticLambda2;->binderDied()V,public-api,sdk,system-api,test-api
+Landroid/media/MediaController2$$ExternalSyntheticLambda1;->binderDied()V,public-api,sdk,system-api,test-api
+Landroid/media/MediaController2$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaController2$2$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
@@ -233,8 +233,8 @@ Landroid/media/MediaSession2Service;->onGetSession(Landroid/media/MediaSession2$
 Landroid/media/MediaSession2Service;->onUpdateNotification(Landroid/media/MediaSession2;)Landroid/media/MediaSession2Service$MediaNotification;,public-api,sdk,system-api,test-api
 Landroid/media/MediaSession2Service;->removeSession(Landroid/media/MediaSession2;)V,public-api,sdk,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda2;->binderDied()V,public-api,sdk,system-api,test-api
+Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda1;->binderDied()V,public-api,sdk,system-api,test-api
+Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/MediaTranscodingManager$OnTranscodingFinishedListener;->onTranscodingFinished(Landroid/media/MediaTranscodingManager$TranscodingSession;)V,sdk,system-api,test-api
@@ -724,7 +724,6 @@ Landroid/media/internal/guava_common/collect/ImmutableCollection;->addAll(Ljava/
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->clear()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->contains(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->iterator()Ljava/util/Iterator;,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/ImmutableCollection;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->remove(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->removeAll(Ljava/util/Collection;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableCollection;->retainAll(Ljava/util/Collection;)Z,core-platform-api,public-api,sdk,system-api,test-api
@@ -775,7 +774,6 @@ Landroid/media/internal/guava_common/collect/ImmutableMap;->isEmpty()Z,core-plat
 Landroid/media/internal/guava_common/collect/ImmutableMap;->keySet()Ljava/util/Set;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMap;->putAll(Ljava/util/Map;)V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/ImmutableMap;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/ImmutableMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMap;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMap;->values()Ljava/util/Collection;,core-platform-api,public-api,sdk,system-api,test-api
@@ -784,7 +782,6 @@ Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet$EntrySetSerial
 Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet$EntrySetSerializedForm;->serialVersionUID:J,sdk
 Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet;->contains(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet;->size()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableMapEntrySet;->writeReplace()Ljava/lang/Object;,sdk
 Landroid/media/internal/guava_common/collect/ImmutableSet$SerializedForm;->readResolve()Ljava/lang/Object;,sdk
@@ -792,7 +789,6 @@ Landroid/media/internal/guava_common/collect/ImmutableSet$SerializedForm;->seria
 Landroid/media/internal/guava_common/collect/ImmutableSet;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSet;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSet;->iterator()Ljava/util/Iterator;,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/ImmutableSet;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/ImmutableSet;->writeReplace()Ljava/lang/Object;,sdk
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap$1EntrySet$1;->get(I)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap$1EntrySet$1;->size()I,core-platform-api,public-api,sdk,system-api,test-api
@@ -821,7 +817,6 @@ Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->lowerKey(Ljava
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->navigableKeySet()Ljava/util/NavigableSet;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->pollFirstEntry()Ljava/util/Map$Entry;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->pollLastEntry()Ljava/util/Map$Entry;,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->serialVersionUID:J,sdk
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->size()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/ImmutableSortedMap;->subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;,core-platform-api,public-api,sdk,system-api,test-api
@@ -922,7 +917,6 @@ Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->keySet()Ljava
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->putAll(Ljava/util/Map;)V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->readObject(Ljava/io/ObjectInputStream;)V,sdk
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/media/internal/guava_common/collect/MapMakerInternalMap;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
