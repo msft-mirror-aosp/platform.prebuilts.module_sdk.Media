@@ -65,8 +65,8 @@ Landroid/media/MediaCommunicationManager$SessionCallbackRecord;->hashCode()I,cor
 Landroid/media/MediaCommunicationManager;->getSession2Tokens()Ljava/util/List;,public-api,system-api,test-api
 Landroid/media/MediaCommunicationManager;->getVersion()I,public-api,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
-Landroid/media/MediaController2$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
-Landroid/media/MediaController2$$ExternalSyntheticLambda2;->binderDied()V,public-api,system-api,test-api
+Landroid/media/MediaController2$$ExternalSyntheticLambda1;->binderDied()V,public-api,system-api,test-api
+Landroid/media/MediaController2$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaController2$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaController2$2$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
@@ -232,8 +232,8 @@ Landroid/media/MediaSession2Service;->onGetSession(Landroid/media/MediaSession2$
 Landroid/media/MediaSession2Service;->onUpdateNotification(Landroid/media/MediaSession2;)Landroid/media/MediaSession2Service$MediaNotification;,public-api,system-api,test-api
 Landroid/media/MediaSession2Service;->removeSession(Landroid/media/MediaSession2;)V,public-api,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
-Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
-Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda2;->binderDied()V,public-api,system-api,test-api
+Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda1;->binderDied()V,public-api,system-api,test-api
+Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaTranscodingManager$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/media/MediaTranscodingManager$OnTranscodingFinishedListener;->onTranscodingFinished(Landroid/media/MediaTranscodingManager$TranscodingSession;)V,system-api,test-api
