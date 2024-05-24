@@ -1,5 +1,0 @@
-signature,file,startline,startcol,endline,endcol,properties
-Lcom/android/media/mainline/flags/CustomFeatureFlags;->enablePidToMediaSession2()Z,out/soong/.intermediates/packages/modules/Media/flags/media_mainline_flags_java_lib/android_common_apex31/javac/srcjars/com/android/media/mainline/flags/CustomFeatureFlags.java,21,5,21,25,
-Lcom/android/media/mainline/flags/FeatureFlags;->enablePidToMediaSession2()Z,out/soong/.intermediates/packages/modules/Media/flags/media_mainline_flags_java_lib/android_common_apex31/javac/srcjars/com/android/media/mainline/flags/FeatureFlags.java,9,5,9,25,
-Lcom/android/media/mainline/flags/FeatureFlagsImpl;->enablePidToMediaSession2()Z,out/soong/.intermediates/packages/modules/Media/flags/media_mainline_flags_java_lib/android_common_apex31/javac/srcjars/com/android/media/mainline/flags/FeatureFlagsImpl.java,8,5,8,25,
-Lcom/android/media/mainline/flags/Flags;->enablePidToMediaSession2()Z,out/soong/.intermediates/packages/modules/Media/flags/media_mainline_flags_java_lib/android_common_apex31/javac/srcjars/com/android/media/mainline/flags/Flags.java,10,5,10,25,
