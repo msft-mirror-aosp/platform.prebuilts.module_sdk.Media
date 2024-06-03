@@ -1,23 +1,25 @@
 // This is auto-generated. DO NOT EDIT.
 
-// blueprint rules added by vendor/google/build/mainline_modules_sdks.py
-// to support coexistence.
-blueprint_package_includes {
-    match_all: ["com.android.mainline"]
-}
-
 package {
     // A default list here prevents the license LSC from adding its own list which would
     // be unnecessary as every module in the sdk already has its own licenses property.
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+apex_contributions_defaults {
+    name: "media-module-sdk.contributions",
+    contents: [
+        "prebuilt_framework-media",
+        "prebuilt_service-media-s",
+    ],
+}
+
 prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
     use_source_config_var: {
-        config_namespace: "ANDROID",
-        var_name: "module_build_from_source",
+        config_namespace: "media_module",
+        var_name: "source_build",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
@@ -45,10 +47,10 @@ prebuilt_bootclasspath_fragment {
 
 java_import {
     name: "updatable-media",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
     use_source_config_var: {
-        config_namespace: "ANDROID",
-        var_name: "module_build_from_source",
+        config_namespace: "media_module",
+        var_name: "source_build",
     },
     visibility: [
         "//frameworks/av/apex:__subpackages__",
@@ -68,10 +70,10 @@ java_import {
 
 java_sdk_library_import {
     name: "framework-media",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
     use_source_config_var: {
-        config_namespace: "ANDROID",
-        var_name: "module_build_from_source",
+        config_namespace: "media_module",
+        var_name: "source_build",
     },
     visibility: ["//visibility:public"],
     apex_available: [
@@ -109,10 +111,10 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "service-media-s",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
     use_source_config_var: {
-        config_namespace: "ANDROID",
-        var_name: "module_build_from_source",
+        config_namespace: "media_module",
+        var_name: "source_build",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
@@ -159,10 +161,10 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.media-systemserverclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
     use_source_config_var: {
-        config_namespace: "ANDROID",
-        var_name: "module_build_from_source",
+        config_namespace: "media_module",
+        var_name: "source_build",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
