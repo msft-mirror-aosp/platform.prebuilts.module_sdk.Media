@@ -16,6 +16,11 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.media-bootclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
+    use_source_config_var: {
+        config_namespace: "media_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
@@ -42,6 +47,11 @@ prebuilt_bootclasspath_fragment {
 
 java_import {
     name: "updatable-media",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
+    use_source_config_var: {
+        config_namespace: "media_module",
+        var_name: "source_build",
+    },
     visibility: [
         "//frameworks/av/apex:__subpackages__",
         "//frameworks/base",
@@ -60,6 +70,11 @@ java_import {
 
 java_sdk_library_import {
     name: "framework-media",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
+    use_source_config_var: {
+        config_namespace: "media_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.media",
@@ -96,6 +111,11 @@ java_sdk_library_import {
 
 java_sdk_library_import {
     name: "service-media-s",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
+    use_source_config_var: {
+        config_namespace: "media_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_Android-Apache-2.0"],
@@ -141,6 +161,11 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.media-systemserverclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "media_module" is true.
+    use_source_config_var: {
+        config_namespace: "media_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.media"],
     licenses: ["media-module-sdk_frameworks_av_license"],
